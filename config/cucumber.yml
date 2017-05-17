@@ -1,0 +1,11 @@
+#The execution of a profile simply requires the use of the flag --profile or -p
+#During execution you can also specify additional parameters alongside the profile.
+#$ cucumber --profile xml_report
+#$ cucumber -p xml_report
+
+#DEFAULT PROFILE#
+# default: -p local
+
+#REPORTS#
+xml_report: --format junit --out reports --format pretty
+json_report: --format json --out reports/TestReport.json --format pretty
